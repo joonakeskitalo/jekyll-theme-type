@@ -1,23 +1,13 @@
-$(document).ready(function() {
+document.getElementById("showOverlayButton").addEventListener("click", showOverlay);
+document.getElementById("hideOverlayButton").addEventListener("click", hideOverlay);
 
-  'use strict';
+function showOverlay() {
+	document.getElementById("overlay").className = "js-off-canvas-container c-off-canvas-container is-active";
+}
 
-  // =================
-  // Responsive videos
-  // =================
+function hideOverlay() {
+	document.getElementById("overlay").className = "js-off-canvas-container c-off-canvas-container";
+}
 
-  $('.o-wrapper').fitVids({
-    'customSelector': ['iframe[src*="ted.com"]']
-  });
 
-  // =================
-  // Off Canvas menu
-  // =================
 
-  $('.js-off-canvas-toggle').click(function(e) {
-    e.preventDefault();
-    $('.js-off-canvas-toggle').toggleClass('is-active');
-    $('.js-off-canvas-container').toggleClass('is-active');
-  });
-
-});
