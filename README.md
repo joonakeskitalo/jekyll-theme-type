@@ -7,6 +7,6 @@ Modified version of [*Type*](https://github.com/aspirethemes/type) theme for Jek
 - Added style for tables
 - Favicon.ico replaced with a png file
 - Added exclusion for pages from navigation
-- 403 pages for `/files`, `/images`, and `/tag`
+- Redirect to 403 from `/files`, `/images`, and `/tag`
 - Added social media links to the sidebar
-
+- Excerpt support
